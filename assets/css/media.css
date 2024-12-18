@@ -2,6 +2,7 @@
 @media screen and (max-width: 1200px){
 /* NavBAr and Hero section */
    /* .NavBar{background-color: rgb(202, 224, 224);} */
+    html body{overflow-x: hidden;}
    .container, .NavBar{
         max-width: 900px; 
         margin: 0 auto;
@@ -77,6 +78,7 @@
 @media screen and (max-width: 1100px){
 /* NavBAr and Hero section */
    /* .NavBar{background-color: rgb(202, 224, 224);} */
+   html body{overflow-x: hidden;}
    .container, .NavBar{
         max-width: 900px; 
         margin: 0 auto;
@@ -159,6 +161,7 @@
 @media screen and (max-width: 960px){
 /* NavBAr and Hero section */
    /* .NavBar{background-color: rgb(202, 224, 224);} */
+   html body{overflow-x: hidden;}
    .container, .NavBar{
         max-width: 700px; 
         margin: 0 auto;
@@ -375,6 +378,9 @@
 @media screen and (max-width: 768px){
 /* NavBAr and Hero section */
    /* .NavBar{background-color: rgb(202, 224, 224);} */
+   html body{
+        overflow-x: hidden;
+   }
    header{
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -623,6 +629,9 @@
 
 @media screen and (max-width: 670px){
 /* NavBAr and Hero section */
+    html body{
+        overflow-x: hidden;
+    }
     header{
         /* background-color: rgb(21, 22, 22); */
         margin-top: 1.5rem;
@@ -922,6 +931,9 @@
 @media screen and (max-width: 399px){
 /* NavBAr and Hero section */
    /* .NavBar{background-color: rgb(14, 14, 14);} */
+    html body{
+        overflow-x: hidden;
+    }
    .container, .NavBar{
         max-width: 570px; 
         margin: 0 auto;
