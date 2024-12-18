@@ -44,6 +44,7 @@ img{
     border-top-right-radius: 30px;
     /* height: 50em; */
     margin-top: 8rem; 
+    overflow-x: hidden;
     /* z-index: 900;   */
 }
 
@@ -62,6 +63,7 @@ header{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    overflow-x: hidden;
 }
 li a.active {
     /* background-color: #0CFAF4; */
