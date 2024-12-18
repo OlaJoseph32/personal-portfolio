@@ -9,6 +9,10 @@
     --color-secondary: #1ee66e;
     --color-extra: #fff;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
 
 
 html body{
