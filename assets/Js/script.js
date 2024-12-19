@@ -89,3 +89,52 @@ window.addEventListener('scroll', () => {
 });
 
 
+// Project section overlay
+// Get elements
+const viewDetailsButtons = document.querySelectorAll(".view-details-btn");
+const overlay = document.getElementById("overlay");
+const closeOverlay = document.getElementById("closeOverlay");
+const overlayBody = document.getElementById("overlay-body");
+
+// Add event listeners to all "View Details" buttons
+viewDetailsButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        // Get the target content ID
+        const targetId = button.getAttribute("data-target");
+        const content = document.getElementById(targetId);
+
+        // Copy content into the overlay body
+        overlayBody.innerHTML = content.innerHTML;
+
+        // Show overlay
+        overlay.style.display = "flex";
+    });
+});
+
+// Close overlay
+closeOverlay.addEventListener("click", () => {
+    overlay.style.display = "none";
+});
+
+// Close overlay when clicking outside the content
+overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+        overlay.style.display = "none";
+    }
+});
+
+
+
+// Show more/show less
+function toggleText() {
+    var text = document.getElementById("text");
+    var button = document.getElementById("showMoreBtn");
+    
+    if (text.style.display === "block") {
+      text.style.display = "-webkit-box";  // Clamps the text again
+      button.innerHTML = "Show More";
+    } else {
+      text.style.display = "block";  // Displays the full text
+      button.innerHTML = "Show Less";
+    }
+}
