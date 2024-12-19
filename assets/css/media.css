@@ -47,10 +47,15 @@
     }
 
 /* Project section */
+    .project-section .container{
+        max-width: 95%;
+        margin: 0 auto;
+    }
     .project-grid-con{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
         padding-bottom: 3rem;
+        margin-left: -.8rem;
     }
 
     .first-project,
@@ -59,18 +64,30 @@
     .fourth-pro,
     .fifth-pro,
     .sixth-pro{
-        height: 150px;
-        width: 270px;
+        height: 320px;
+        width: 330px;
     }
-    .text{
-        width: 390px;
+    .img-pic{
+        height: 200px;
     }
-    .text h2{
+    .detail-inf h2{
+        font-size: 1rem;
+    }
+    .detail-inf p{
         font-size: .9rem;
-        font-weight: 700;
     }
-    .text p{
+    .detail-inf h3{
         font-size: .9rem;
+        margin: 5px auto;
+
+    }
+    .detail-inf h4{
+        font-size: .8rem;
+        margin: 5px auto;
+    }
+    .detail-inf a{
+        font-size: .7rem;
+        letter-spacing: 1px;
     }
 }
 
@@ -142,19 +159,12 @@
     .fourth-pro,
     .fifth-pro,
     .sixth-pro{
-        height: 150px;
-        width: 270px;
+        height: 320px;
+        width: 330px;
     }
-    .text{
-        width: 390px;
+    .img-pic{
+        height: 160px;
     }
-    .text h2{
-        font-size: .9rem;
-        font-weight: 700;
-    }
-    .text p{
-        font-size: .9rem;
-    } 
     
 }
 
@@ -306,7 +316,7 @@
 
 /* Project section */
     .project-grid-con{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 40px;
         padding-bottom: 3rem;
     }
@@ -319,19 +329,34 @@
     .fourth-pro,
     .fifth-pro,
     .sixth-pro{
-        height: 120px;
-        width: 200px;
+        height: 320px;
+        width: 330px;
     }
-    .text{
-        width: 390px;
+
+    .img-pic{
+        height: 160px;
     }
-    .text h2{
-        font-size: .9rem;
-        font-weight: 700;
+    
+    .detail-inf h2{
+        font-size: .8rem;
     }
-    .text p{
-        font-size: .9rem;
-    } 
+    .detail-inf p{
+        font-size: .75rem;
+    }
+    .detail-inf h3{
+        font-size: .7rem;
+        margin: 5px auto;
+
+    }
+    .detail-inf h4{
+        font-size: .6rem;
+        margin: 5px auto;
+    }
+    .detail-inf a{
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+
 
 /* COntact me section */
     .contact h2{
@@ -377,7 +402,7 @@
     
 @media screen and (max-width: 768px){
 /* NavBAr and Hero section */
-   /* .NavBar{background-color: rgb(202, 224, 224);} */
+   .NavBar{background-color: rgb(3, 3, 3);}
    html body{
         overflow-x: hidden;
    }
@@ -546,7 +571,7 @@
 
 /* Project section */
     .project-grid-con{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 21px;
         padding-bottom: 3rem;
     }
@@ -565,23 +590,30 @@
     .fourth-pro,
     .fifth-pro,
     .sixth-pro{
-        height: 120px;
-        width: 200px;
+        height: 320px;
+        width: 300px;
     }
-    .text{
-        width: 390px;
+    .img-pic{
+        height: 160px;
     }
-    .text h2{
+    .detail-inf h2{
         font-size: .7rem;
-        font-weight: 700;
     }
-    .text p{
+    .detail-inf p{
         font-size: .7rem;
-        margin-bottom: 0;
-    } 
-    .text i{
-        font-size: .9rem;
-        /* margin-top: -2rem; */
+    }
+    .detail-inf h3{
+        font-size: .7rem;
+        margin: 5px auto;
+
+    }
+    .detail-inf h4{
+        font-size: .6rem;
+        margin: 5px auto;
+    }
+    .detail-inf a{
+        font-size: .7rem;
+        letter-spacing: 1px;
     }
 
 /* COntact me section */
@@ -632,7 +664,7 @@
     html body{
         overflow-x: hidden;
     }
-    header{
+    #section1 header{
         /* background-color: rgb(21, 22, 22); */
         margin-top: 1.5rem;
     }
@@ -853,29 +885,78 @@
     .fourth-pro,
     .fifth-pro,
     .sixth-pro{
-        height: 180px;
+        height: 320px;
         width: 350px;
     }
-    .skills-grid-con img{
-        height: 80%;
-        width: 80%;
+
+     /* .imag-con img{
+        height: 180px;
+        width: 100%;
+        border-radius: 5px;
+    } */
+
+    .details{
+        height: fit-content;
+        width: 100%;
+        /* background-color: aqua; */
+        line-height: 2;
     }
-    
-    .text{
-        width: 390px;
+
+    .details h2{
+        font-size: 1rem;
     }
-    .text h2{
-        font-size: .7rem;
-        font-weight: 700;
+    .details p{
+        font-size: .8rem;
+        font-weight: lighter;
     }
-    .text p{
-        font-size: .7rem;
-        margin-bottom: 0;
-    } 
-    .text i{
+    .details button{
+        font-size: .8rem;
+    }
+     
+    .overlay-content {
+        height: fit-content;
+        padding: 5px;
+        width: 85%;
+        max-width: 850px;
+    }
+      
+    .overlay-content .image-con{
+        width: 100%;
+    }
+    .overlay-content .details-info{
+        width: 100%;
+    }
+    .img-pic{
+        height: 160px;
+    }
+   
+    #overlay-body{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 25px;
+    }
+    .detail-inf{
+        padding: 5px 7px;
+    }
+
+    .detail-inf h2{
         font-size: .9rem;
-        /* margin-top: -2rem; */
     }
+    .detail-inf p{
+        font-size: .9rem;
+    }
+    .detail-inf h3{
+        font-size: .9rem;
+    }
+    .detail-inf h4{
+        font-size: .8rem;
+    }
+    .detail-inf a{
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+
 
 /* COntact me section */
     .contact h2{
@@ -930,7 +1011,7 @@
 
 @media screen and (max-width: 399px){
 /* NavBAr and Hero section */
-   /* .NavBar{background-color: rgb(14, 14, 14);} */
+   /* .NavBar{background-color: rgb(115, 18, 18);} */
     html body{
         overflow-x: hidden;
     }
@@ -1147,29 +1228,78 @@
     .fourth-pro,
     .fifth-pro,
     .sixth-pro{
-        height: 180px;
+        height: 320px;
         width: 320px;
     }
-    .skills-grid-con img{
-        height: 70%;
-        width: 80%;
+        
+    /* .imag-con img{
+        height: 180px;
+        width: 100%;
+        border-radius: 5px;
+    } */
+
+    .details{
+        height: fit-content;
+        width: 100%;
+        /* background-color: aqua; */
+        line-height: 2;
     }
-    
-    .text{
-        width: 390px;
+
+    .details h2{
+        font-size: 1rem;
     }
-    .text h2{
-        font-size: .7rem;
-        font-weight: 700;
+    .details p{
+        font-size: .8rem;
+        font-weight: lighter;
     }
-    .text p{
-        font-size: .7rem;
-        margin-bottom: 0;
-    } 
-    .text i{
+    .details button{
+        font-size: .8rem;
+    }
+     
+    .overlay-content {
+        height: fit-content;
+        padding: 5px;
+        width: 85%;
+        max-width: 850px;
+    }
+      
+    .overlay-content .image-con{
+        width: 100%;
+    }
+    .overlay-content .details-info{
+        width: 100%;
+    }
+    .img-pic{
+        height: 160px;
+    }
+   
+    #overlay-body{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 25px;
+    }
+    .detail-inf{
+        padding: 5px 7px;
+    }
+
+    .detail-inf h2{
         font-size: .9rem;
-        /* margin-top: -2rem; */
     }
+    .detail-inf p{
+        font-size: .9rem;
+    }
+    .detail-inf h3{
+        font-size: .9rem;
+    }
+    .detail-inf h4{
+        font-size: .8rem;
+    }
+    .detail-inf a{
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+
 
 /* COntact me section */
     .contact h2{
