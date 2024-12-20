@@ -402,7 +402,7 @@
     
 @media screen and (max-width: 768px){
 /* NavBAr and Hero section */
-   .NavBar{background-color: rgb(3, 3, 3);}
+/*    .NavBar{background-color: rgb(3, 3, 3);} */
    html body{
         overflow-x: hidden;
    }
@@ -666,7 +666,7 @@
     }
     #section1 header{
         /* background-color: rgb(21, 22, 22); */
-        margin-top: 1.5rem;
+        margin-top: 0;
     }
    .container, .NavBar{
         max-width: 640px; 
